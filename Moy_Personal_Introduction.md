@@ -9,18 +9,16 @@ I enjoy solving problems with an open mind and believe every challenge is an opp
 
 ---
 
-## 🎯 Goals & Direction
+##  Goals & Direction
 
-- 🌱 Currently learning: **XXX** (e.g. Front-end Dev / UI Design / Data Science)
-- 🚀 Short-term goal: Complete **XXX project** or earn **XXX certification**
-- 🌍 Long-term vision: Become a professional in the field of **XXX**
+- 
 
 ---
 
-## 📬 Get in Touch
+##  Get in Touch
 
 - 📧 Email: [unn90101@qq.com](mailto:unn90101@qq.com)
 - 💬 WeChat: None 
 ---
-> *"Stay curious. Keep growing."*  
+> *"Hey my friend, something may go wrong ! Still loading... but worth the wait.."*  
 > — Moy
