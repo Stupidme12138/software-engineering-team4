@@ -1,6 +1,10 @@
+# 小组成员简介
+
+---
+
 ## 邱何一 个人简介
 
-**联系方式**
+### 联系方式
 
 - 电话：18627958005
 - 邮箱：1773683069@qq.com
@@ -9,7 +13,7 @@
 - Gitee：[Stupid me (sssstupidme) - Gitee.com](https://gitee.com/sssstupidme)
 - 年龄：21 岁
 
-**个人照片**
+### 个人照片
 
 <img src="https://free.picui.cn/free/2026/03/11/69b0e6676417e.jpg" 
      alt="描述文字" 
@@ -23,7 +27,7 @@
 
 ### 教育背景
 
-### 华中师范大学 | 计算机科学与技术（基地班） | 本科
+#### 华中师范大学 | 计算机科学与技术（基地班） | 本科
 
 **2023.09 - 至今**
 
@@ -59,7 +63,7 @@
 
 #### 后端开发
 
-1. **核心语言**：掌握 Java 后端开发，具备项目工程化实现能力；
+1. **核心语言**：掌握 Java 后端开发，熟练应用 Springboot3+Mybatis+Maven 进行开发，具备项目工程化实现能力；
 2. **系统操作**：熟练使用 Linux 系统操作，掌握命令行、环境配置、程序部署等核心技能；
 3. **模型部署**：熟悉华为 ATC 工具、昇腾 AI 处理器 / Ascend NPU 环境，掌握模型格式转换（.om）、边缘设备（OrangePi）算法部署与性能优化，了解鸿蒙 OS 硬件适配逻辑。
 
@@ -82,6 +86,7 @@
 - 数据库：SQL 相关数据库
 - 工具 / 库：Hugging Face、OpenCV、NumPy、Pandas、llm-universe
 - 硬件 / 平台：OrangePi 开发板、Ascend NPU、鸿蒙 OS、华为 ATC 工具
+- Vibe Coding: 熟练掌握 Claude Code, Kiro, Cursor, Copilot+VSCode 等工具
 
 ### 荣誉证书
 
@@ -92,9 +97,11 @@
 5. 博雅丹桂奖学金、博雅银桂奖学金 | 2023-2024、2024-2025
 6. 校三好学生 | 2023-2024、2024-2025
 
+---
+
 ## 陈慧 个人简介
 
-**联系方式**
+### 联系方式
 
 - 电话：19107121107
 - 邮箱：zhihuaqiaosan@qq.com
@@ -102,7 +109,7 @@
 - Github：https://github.com/zhihuaqiaosan
 - 年龄：21
 
-**个人照片**
+### 个人照片
 <img src="https://github.com/user-attachments/assets/421afd77-835c-43fa-b42e-acf2f739a497" 
      alt="描述文字" 
      style="float: left; margin-right: 20px; margin-bottom: 10px; max-width: 300px;">
