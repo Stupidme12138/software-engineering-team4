@@ -1,4 +1,4 @@
-![fa6d128a37e4987f20c207238c034e7](E:\typora\images\fa6d128a37e4987f20c207238c034e7.jpg)
+![fa6d128a37e4987f20c207238c034e7](https://jiangtdi.oss-cn-beijing.aliyuncs.com/24b9e432-2036-4758-a601-b8158e634e97.jpg)
 
 姜硕阳，华中师范大学23级计算机学院本科生，男
 
@@ -6,7 +6,7 @@
 
 项目经历：
 
-**智能餐饮服务平台** 
+**智能餐饮服务平台**
 
 Spring Boot Spring MVC JWT MySQL Redis
 
@@ -28,7 +28,7 @@ Spring Boot Spring MVC JWT MySQL Redis
 
 智能订单处理：开发**定时任务模块**，自动识别并处理超时未支付订单，减少人工干预，提高运营效率
 
-**慧享生活圈** 
+**慧享生活圈**
 
 SpringBoot MySQL Redis Lua Kafka Caffeine LangChain4j MybatisPlus
 
