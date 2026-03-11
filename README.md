@@ -12,10 +12,7 @@
 
 **个人照片**
 
-<img src="![头像](https://github.com/user-attachments/assets/421afd77-835c-43fa-b42e-acf2f739a497)" 
-
-     alt="陈慧照片" 
-     style="float: left; margin-right: 20px; margin-bottom: 10px; max-width: 300px;">
+![头像](https://github.com/user-attachments/assets/421afd77-835c-43fa-b42e-acf2f739a497)
 
 ### 自我介绍
 
