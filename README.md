@@ -1,19 +1,12 @@
-# 软件工程课程项目 - 第四小组
-
-## 👥 小组成员
-
-* ##### **邱何一**
-* ##### **徐鑫堃**
-* ##### **姜硕阳**
 * ##### **陈慧**
 
 1. ###### 图片信息
 
 
 
-2. 自我简介
+1. 自我简介
    本人性格活泼开朗，能与他人良好的相处；对工作认真负责，具有很高的责任心和团队意识；拥有独立开发能力，具有分析问题和解决问题的能力，能完成高难度的项目需求；善于钻研，对前端开发有浓厚的兴趣，重视用户体验，有着较为清晰的目标和计划，并且付诸实际行动。
-3. 项目经历
+2. 项目经历
    ***1. 《智测宝》APP前端开发（2024.04 - 2024.08）***
    项目简介：参与第17届计算机设计大赛，负责项目《智测宝》APP的前后端搭建
    技术栈：React Native + Spring Cloud Alibaba
@@ -38,49 +31,21 @@
    运用 WebGL 技术优化传统纹理 3D 渲染效果，使页面加载速度提升 30%
    后端搭建高并发服务器架构，结合 MongoDB 非关系型数据库存储数据
    通过 JWT 鉴权机制保障用户信息安全
-4. 获奖
+3. 获奖
    第17届中国大学生计算机设计大赛 国家三等奖
    第7届去全球校园人工智能算法精英大赛 国家三等奖
    2025年中国国际大学生创新大赛 校赛铜奖
    校三好学生
    校优秀共青团员
-5. ###### 掌握技能
+4. ###### 掌握技能
 
-&nbsp;	前端开发：React (Hooks, Redux)、Vue3 (Composition API, Pinia)、React Native、ArkTS (鸿蒙)
+ 	前端开发：React (Hooks, Redux)、Vue3 (Composition API, Pinia)、React Native、ArkTS (鸿蒙)
 
-&nbsp;	后端开发：Node.js、Express、Spring Cloud Alibaba (Nacos, MyBatis-Plus)
+ 	后端开发：Node.js、Express、Spring Cloud Alibaba (Nacos, MyBatis-Plus)
 
-&nbsp;	数据库：MYSQL
+ 	数据库：MYSQL
 
-&nbsp;	开发工具：Git、VS Code、鸿蒙 DevEco Studio
+ 	开发工具：Git、VS Code、鸿蒙 DevEco Studio
 
-&nbsp;	系统安全：JWT 鉴权
-
-
-
-## 📋 项目简介
-
-软件工程课程小组项目
-
-## 🚀 快速开始
-
-（待补充）
-
-## 📁 项目结构
-
-（待补充）
-
-## 📝 开发规范
-
-* 使用Git进行版本控制
-* 创建功能分支进行开发
-* 提交前先pull最新代码
-
-## 📞 联系方式
-
-（待补充）
-
-## 📄 许可证
-
-（待补充）
+ 	系统安全：JWT 鉴权
 
