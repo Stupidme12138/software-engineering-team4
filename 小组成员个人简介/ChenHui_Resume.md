@@ -9,9 +9,7 @@
 - 年龄：21
 
 ### 个人照片
-<img src="https://github.com/user-attachments/assets/421afd77-835c-43fa-b42e-acf2f739a497" 
-     alt="描述文字" 
-     style="float: left; margin-right: 20px; margin-bottom: 10px; max-width: 300px;">
+<img src="https://github.com/user-attachments/assets/421afd77-835c-43fa-b42e-acf2f739a497" width="200" alt="陈慧个人照片">
 
 ### 自我介绍
 
