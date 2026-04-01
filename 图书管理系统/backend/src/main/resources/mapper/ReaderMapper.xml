@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.libraryms.mapper.ReaderMapper">
+
+  <resultMap id="BaseMap" type="com.example.libraryms.entity.Reader">
+    <id column="id" property="id"/>
+    <result column="card_no" property="cardNo"/>
+    <result column="password_hash" property="passwordHash"/>
+    <result column="name" property="name"/>
+    <result column="phone" property="phone"/>
+    <result column="email" property="email"/>
+    <result column="id_card" property="idCard"/>
+    <result column="status" property="status"/>
+    <result column="created_at" property="createdAt"/>
+    <result column="updated_at" property="updatedAt"/>
+  </resultMap>
+
+  <select id="findById" resultMap="BaseMap">
+    select * from reader where id = #{id} limit 1
+  </select>
+
+  <select id="findByCardNo" resultMap="BaseMap">
+    select * from reader where card_no = #{cardNo} limit 1
+  </select>
+
+  <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+    insert into reader (card_no, password_hash, name, phone, email, id_card, status)
+    values (#{cardNo}, #{passwordHash}, #{name}, #{phone}, #{email}, #{idCard}, #{status})
+  </insert>
+
+  <update id="update">
+    update reader
+    set
+      card_no = #{cardNo},
+      name = #{name},
+      phone = #{phone},
+      email = #{email},
+      id_card = #{idCard},
+      status = #{status}
+    where id = #{id}
+  </update>
+
+  <update id="updatePassword">
+    update reader
+    set password_hash = #{passwordHash}
+    where id = #{id}
+  </update>
+
+  <sql id="whereSql">
+    <where>
+      <if test="status != null and status != ''">
+        and status = #{status}
+      </if>
+      <if test="keyword != null and keyword != ''">
+        and (
+          card_no like concat('%', #{keyword}, '%')
+          or name like concat('%', #{keyword}, '%')
+          or phone like concat('%', #{keyword}, '%')
+        )
+      </if>
+    </where>
+  </sql>
+
+  <select id="count" resultType="long">
+    select count(1) from reader
+    <include refid="whereSql"/>
+  </select>
+
+  <select id="page" resultMap="BaseMap">
+    select * from reader
+    <include refid="whereSql"/>
+    order by id desc
+    limit #{limit} offset #{offset}
+  </select>
+
+</mapper>
+

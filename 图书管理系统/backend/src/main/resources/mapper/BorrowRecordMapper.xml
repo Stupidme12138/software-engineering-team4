@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.libraryms.mapper.BorrowRecordMapper">
+
+  <resultMap id="BaseMap" type="com.example.libraryms.entity.BorrowRecord">
+    <id column="id" property="id"/>
+    <result column="reader_id" property="readerId"/>
+    <result column="book_id" property="bookId"/>
+    <result column="borrow_time" property="borrowTime"/>
+    <result column="due_time" property="dueTime"/>
+    <result column="return_time" property="returnTime"/>
+    <result column="status" property="status"/>
+    <result column="operator_user_id" property="operatorUserId"/>
+    <result column="remark" property="remark"/>
+    <result column="created_at" property="createdAt"/>
+    <result column="updated_at" property="updatedAt"/>
+  </resultMap>
+
+  <select id="findById" resultMap="BaseMap">
+    select * from borrow_record where id = #{id} limit 1
+  </select>
+
+  <select id="findActiveByReaderAndBook" resultMap="BaseMap">
+    select * from borrow_record
+    where reader_id = #{readerId} and book_id = #{bookId} and status = 'BORROWED'
+    order by id desc
+    limit 1
+  </select>
+
+  <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+    insert into borrow_record (reader_id, book_id, borrow_time, due_time, return_time, status, operator_user_id, remark)
+    values (#{readerId}, #{bookId}, #{borrowTime}, #{dueTime}, #{returnTime}, #{status}, #{operatorUserId}, #{remark})
+  </insert>
+
+  <update id="update">
+    update borrow_record
+    set
+      reader_id = #{readerId},
+      book_id = #{bookId},
+      borrow_time = #{borrowTime},
+      due_time = #{dueTime},
+      return_time = #{returnTime},
+      status = #{status},
+      operator_user_id = #{operatorUserId},
+      remark = #{remark}
+    where id = #{id}
+  </update>
+
+  <sql id="whereSql">
+    <where>
+      <if test="readerId != null">
+        and reader_id = #{readerId}
+      </if>
+      <if test="bookId != null">
+        and book_id = #{bookId}
+      </if>
+      <if test="status != null and status != ''">
+        and status = #{status}
+      </if>
+    </where>
+  </sql>
+
+  <select id="count" resultType="long">
+    select count(1) from borrow_record
+    <include refid="whereSql"/>
+  </select>
+
+  <select id="page" resultMap="BaseMap">
+    select * from borrow_record
+    <include refid="whereSql"/>
+    order by id desc
+    limit #{limit} offset #{offset}
+  </select>
+
+  <select id="countByReader" resultType="long">
+    select count(1) from borrow_record where reader_id = #{readerId}
+  </select>
+
+  <select id="pageByReader" resultMap="BaseMap">
+    select * from borrow_record
+    where reader_id = #{readerId}
+    order by id desc
+    limit #{limit} offset #{offset}
+  </select>
+
+</mapper>
+

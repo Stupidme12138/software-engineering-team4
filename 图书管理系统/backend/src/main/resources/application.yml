@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: library-ms
+  profiles:
+    active: dev
+
+server:
+  port: 8080
+
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+app:
+  security:
+    jwt:
+      issuer: library-ms
+      secret: "CHANGE_ME_TO_A_LONG_RANDOM_SECRET_32+_CHARS"
+      access-token-minutes: 240
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+

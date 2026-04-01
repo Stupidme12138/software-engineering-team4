@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.libraryms.mapper.StatsMapper">
+
+  <select id="countBooks" resultType="long">
+    select count(1) from book
+    <where>
+      <if test="status != null and status != ''">
+        and status = #{status}
+      </if>
+    </where>
+  </select>
+
+  <select id="sumAvailableBooks" resultType="long">
+    select ifnull(sum(available_qty), 0) from book where status = 'ENABLED'
+  </select>
+
+  <select id="countReaders" resultType="long">
+    select count(1) from reader
+    <where>
+      <if test="status != null and status != ''">
+        and status = #{status}
+      </if>
+    </where>
+  </select>
+
+  <select id="countBorrowRecords" resultType="long">
+    select count(1) from borrow_record
+    <where>
+      <if test="status != null and status != ''">
+        and status = #{status}
+      </if>
+    </where>
+  </select>
+
+</mapper>
+
